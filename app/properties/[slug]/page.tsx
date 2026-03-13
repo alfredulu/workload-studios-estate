@@ -4,15 +4,23 @@ import { notFound } from "next/navigation";
 import ContactSidebar from "@/components/ContactSidebar";
 import PropertyGallery from "@/components/PropertyGallery";
 import { getPropertyBySlug } from "@/lib/property";
+import { properties } from "@/data/properties";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function PropertyDetail({ params }: Props) {
-  const property = getPropertyBySlug(params.slug);
+export function generateStaticParams() {
+  return properties.map((property) => ({
+    slug: property.slug,
+  }));
+}
+
+export default async function PropertyDetail({ params }: Props) {
+  const { slug } = await params;
+  const property = getPropertyBySlug(slug);
 
   if (!property) {
     return notFound();
