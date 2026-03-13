@@ -1,28 +1,11 @@
-import type { SimpleIcon } from "simple-icons";
-import { siInstagram, siLinkedin, siX } from "simple-icons/icons";
+import { Instagram, Linkedin, X } from "lucide-react";
 import Link from "next/link";
 
-const socialLinks: {
-  name: string;
-  href: string;
-  icon: SimpleIcon;
-}[] = [
-  { name: "X", href: "https://x.com/workload", icon: siX },
-  { name: "Instagram", href: "https://instagram.com/workload", icon: siInstagram },
-  { name: "LinkedIn", href: "https://linkedin.com/company/workload", icon: siLinkedin },
+const socialLinks = [
+  { name: "X", href: "https://x.com/workload", icon: X },
+  { name: "Instagram", href: "https://instagram.com/workload", icon: Instagram },
+  { name: "LinkedIn", href: "https://linkedin.com/company/workload", icon: Linkedin },
 ];
-
-function SocialIcon({ icon }: { icon: SimpleIcon }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      aria-label={icon.title}
-      className="h-5 w-5 fill-current"
-    >
-      <path d={icon.path} />
-    </svg>
-  );
-}
 
 const footerLinks = [
   {
@@ -82,18 +65,21 @@ export default function Footer() {
         <div className="space-y-4">
           <p className="text-[11px] uppercase tracking-[0.4em] text-slate-400">Follow</p>
           <div className="flex items-center gap-3">
-            {socialLinks.map((link) => (
-              <Link
-                href={link.href}
-                key={link.name}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-black/5 bg-deepSlate text-stone hover:border-stone"
-                aria-label={link.name}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SocialIcon icon={link.icon} />
-              </Link>
-            ))}
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <Link
+                  href={link.href}
+                  key={link.name}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-black/5 bg-deepSlate text-stone hover:border-stone"
+                  aria-label={link.name}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon className="h-5 w-5" />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

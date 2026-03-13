@@ -36,9 +36,9 @@ export const properties: Property[] = [
       "Automated climate façade",
     ],
     images: [
-      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1449247709967-d3cd2d7d14af?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZnR8ZW58MHx8MHx8fDA%3D",
     ],
     featured: true,
   },
