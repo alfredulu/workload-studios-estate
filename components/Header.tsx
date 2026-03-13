@@ -10,7 +10,9 @@ import clsx from "clsx";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Properties", href: "/properties" },
-  { label: "Sell With Us", href: "/sell" },
+  { label: "Developments", href: "/developments" },
+  { label: "Neighborhoods", href: "/neighborhoods" },
+  { label: "Sell with Us", href: "/sell" },
 ];
 
 export default function Header() {
@@ -19,46 +21,43 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 40);
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <header
-      className={clsx(
-        "fixed inset-x-0 top-0 z-50 border-b transition-all duration-300",
-        isScrolled
-          ? "bg-white/80 border-white/40 backdrop-blur-md shadow-sm"
-          : "bg-transparent border-transparent"
-      )}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-transparent backdrop-blur-none">
+      <div
+        className={clsx(
+          "mx-auto flex max-w-6xl items-center justify-between px-6 py-3 transition-transform duration-300",
+          "rounded-[30px] border border-black/5 bg-white/70 shadow-glass backdrop-blur-md backdrop-saturate-150",
+          isScrolled ? "translate-y-0" : "translate-y-0"
+        )}
+      >
         <Link href="/" className="flex flex-col leading-none">
-          <span className="text-sm uppercase tracking-[0.4em] text-slate-400">
-            Workload Studios
-          </span>
-          <span className="text-2xl font-display text-midnight">Estate</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-slate-500">Workload Studios</span>
+          <span className="text-2xl font-display text-deepSlate">Estate</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-semibold uppercase tracking-[0.3em] text-slate-600 md:flex">
+        <nav className="hidden items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-600 md:flex">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={clsx(
-                "transition-colors duration-200",
-                pathname === link.href
-                  ? "text-midnight"
-                  : "text-slate-500 hover:text-midnight"
-              )}
-            >
+              <Link
+                key={link.href}
+                href={link.href}
+                    className={clsx(
+                      "transition-colors duration-200",
+                      pathname === link.href
+                        ? "text-deepSlate"
+                        : "text-slate-500 hover:text-deepSlate"
+                    )}
+              >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500 md:flex">
+        <div className="hidden items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.4em] text-slate-500 md:flex">
           <Phone size={16} />
           <span>+234 1 800 0000</span>
         </div>
@@ -66,7 +65,7 @@ export default function Header() {
         <button
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
-          className="flex items-center justify-center rounded-full border border-slate-200 bg-white/80 p-2 shadow-sm transition hover:border-slate-400 md:hidden"
+          className="flex items-center justify-center rounded-full border border-black/10 bg-white/80 p-2 shadow-sm transition hover:border-deepSlate md:hidden"
         >
           <Menu size={20} />
         </button>
@@ -79,19 +78,17 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", stiffness: 140 }}
-            className="fixed inset-y-0 right-0 z-50 w-3/4 border-l border-slate-200 bg-white/95 p-6 shadow-xl backdrop-blur-md md:hidden"
+            className="fixed inset-y-0 right-0 z-50 w-3/4 border-l border-black/5 bg-white/90 p-6 backdrop-blur-md"
           >
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
-                  Workload
-                </p>
-                <p className="text-2xl font-display text-midnight">Estate</p>
+                <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Workload</p>
+                <p className="text-2xl font-display text-deepSlate">Estate</p>
               </div>
               <button
                 onClick={() => setMenuOpen(false)}
                 aria-label="Close menu"
-                className="rounded-full border border-slate-200 p-2 transition hover:border-slate-400"
+                className="rounded-full border border-black/10 p-2 transition hover:border-deepSlate"
               >
                 <X size={18} />
               </button>
@@ -106,8 +103,8 @@ export default function Header() {
                   className={clsx(
                     "transition-colors duration-200",
                     pathname === link.href
-                      ? "text-midnight"
-                      : "text-slate-500 hover:text-midnight"
+                    ? "text-deepSlate"
+                    : "text-slate-500 hover:text-deepSlate"
                   )}
                 >
                   {link.label}

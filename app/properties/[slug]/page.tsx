@@ -21,14 +21,14 @@ export default function PropertyDetail({ params }: Props) {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-24 pt-10">
       <div className="mb-6 text-xs uppercase tracking-[0.4em] text-slate-400">
-        <Link href="/properties" className="text-slate-500 hover:text-midnight">
+        <Link href="/properties" className="text-slate-500 hover:text-deepSlate">
           ← Back to Properties
         </Link>
       </div>
 
       <div className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
         <div className="space-y-6">
-          <div className="relative h-80 overflow-hidden rounded-[32px] border border-slate-200 bg-slate-100 shadow-lg">
+          <div className="relative h-80 overflow-hidden rounded-[32px] border border-black/5 bg-slate-100 shadow-lg">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${property.images[0]})` }}
@@ -43,8 +43,8 @@ export default function PropertyDetail({ params }: Props) {
             <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
               {property.address}
             </p>
-            <h1 className="text-4xl font-display text-midnight">{property.name}</h1>
-            <p className="text-3xl font-semibold text-midnight">{property.price}</p>
+            <h1 className="text-4xl font-display text-deepSlate">{property.name}</h1>
+            <p className="text-3xl font-semibold text-deepSlate">{property.price}</p>
             <div className="flex items-center gap-4 text-sm uppercase tracking-[0.3em] text-slate-500">
               <span className="flex items-center gap-1">
                 <MapPin size={14} />
@@ -57,34 +57,34 @@ export default function PropertyDetail({ params }: Props) {
           <p className="text-lg text-slate-600">{property.description}</p>
 
           <div className="grid gap-4 sm:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-500">
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Bedrooms</p>
-              <p className="mt-2 text-2xl font-semibold text-midnight">
+            <div className="rounded-3xl border border-black/5 bg-white/80 p-4 text-sm text-slate-500">
+                <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Bedrooms</p>
+              <p className="mt-2 text-2xl font-semibold text-deepSlate">
                 {property.bedrooms}
               </p>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-500">
+            <div className="rounded-3xl border border-black/5 bg-white/80 p-4 text-sm text-slate-500">
               <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Bathrooms</p>
-              <p className="mt-2 text-2xl font-semibold text-midnight">
+              <p className="mt-2 text-2xl font-semibold text-deepSlate">
                 {property.bathrooms}
               </p>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-500">
+            <div className="rounded-3xl border border-black/5 bg-white/80 p-4 text-sm text-slate-500">
               <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Size</p>
-              <p className="mt-2 text-2xl font-semibold text-midnight">
+              <p className="mt-2 text-2xl font-semibold text-deepSlate">
                 {property.size}
               </p>
             </div>
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-2xl font-display text-midnight">Key Features</h2>
+              <h2 className="text-2xl font-display text-deepSlate">Key Features</h2>
             <ul className="grid gap-3 md:grid-cols-2">
               {property.features.map((feature) => (
-                <li
-                  key={feature}
-                  className="rounded-2xl border border-slate-200 bg-slate-50/80 px-4 py-3 text-sm uppercase tracking-[0.4em] text-slate-500"
-                >
+            <li
+              key={feature}
+              className="rounded-2xl border border-black/5 bg-slate-50/80 px-4 py-3 text-sm uppercase tracking-[0.4em] text-slate-500"
+            >
                   {feature}
                 </li>
               ))}

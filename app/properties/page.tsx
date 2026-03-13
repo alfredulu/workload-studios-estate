@@ -15,9 +15,9 @@ export default function PropertiesPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 pb-20">
-      <div className="flex flex-col gap-4 border-b border-slate-200 pb-8">
+      <div className="flex flex-col gap-4 border-b border-black/5 pb-8">
         <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Portfolio</p>
-        <h1 className="text-4xl font-display text-midnight">Explore Properties</h1>
+        <h1 className="text-4xl font-display text-deepSlate">Explore Properties</h1>
         <p className="max-w-2xl text-lg text-slate-600">
           Filter through carefully vetted estates and workspaces. Each listing is ready to preview with dedicated support personnel.
         </p>
@@ -27,8 +27,8 @@ export default function PropertiesPage() {
             className={clsx(
               "rounded-full border px-5 py-2 transition",
               activeFilter === "All"
-                ? "border-midnight bg-midnight/10 text-midnight"
-                : "border-slate-200 text-slate-500 hover:border-midnight hover:text-midnight"
+              ? "border-deepSlate bg-deepSlate/10 text-deepSlate"
+              : "border-black/5 text-slate-500 hover:border-deepSlate hover:text-deepSlate"
             )}
           >
             All
@@ -40,8 +40,8 @@ export default function PropertiesPage() {
               className={clsx(
                 "rounded-full border px-5 py-2 transition",
                 activeFilter === type
-                  ? "border-midnight bg-midnight/10 text-midnight"
-                  : "border-slate-200 text-slate-500 hover:border-midnight hover:text-midnight"
+              ? "border-deepSlate bg-deepSlate/10 text-deepSlate"
+              : "border-black/5 text-slate-500 hover:border-deepSlate hover:text-deepSlate"
               )}
             >
               {type}

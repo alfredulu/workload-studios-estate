@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${inter.variable} bg-quartz text-midnight antialiased`}
+        className={`${playfair.variable} ${inter.variable} bg-stone text-deepSlate antialiased`}
       >
-        <div className="min-h-screen bg-quartz text-midnight">
+        <div className="min-h-screen bg-stone text-deepSlate">
           <Header />
-          <main className="pt-[96px]">{children}</main>
+          <main className="pt-[110px]">{children}</main>
           <Footer />
         </div>
       </body>
