@@ -61,9 +61,9 @@ export const properties: Property[] = [
       "Smart home automation",
     ],
     images: [
-      "https://images.unsplash.com/photo-1505691723518-36a5a15d7d8a?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1464146072233-8a8e0ed5a3a5?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
     ],
   },
   {

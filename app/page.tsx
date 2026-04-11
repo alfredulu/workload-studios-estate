@@ -62,11 +62,13 @@ export default function Home() {
               Workload Studios Estate
             </p>
             <h1 className="text-4xl font-display text-deepSlate leading-tight md:text-5xl">
-              Architectural residences and visionary masterplans sculpted for Nigeria&rsquo;s luxury elite.
+              Architectural residences and visionary masterplans sculpted for
+              Nigeria&rsquo;s luxury elite.
             </h1>
             <p className="text-lg text-slate-600">
-              From bespoke penthouses to landmark developments, we orchestrate elevated property journeys,
-              blending tactile materials, cultural nuance, and white-glove concierge service.
+              From bespoke penthouses to landmark developments, we orchestrate
+              elevated property journeys, blending tactile materials, cultural
+              nuance, and white-glove concierge service.
             </p>
 
             <form className="grid gap-4 md:grid-cols-3">
@@ -95,7 +97,7 @@ export default function Home() {
             </form>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="rounded-2xl bg-terracotta px-6 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone transition hover:bg-black">
+              <button className="rounded-2xl bg-terracotta px-6 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone transition hover:bg-black active:bg-black hover:text-white active:text-white">
                 Start Search
               </button>
               <Link
@@ -119,9 +121,14 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.4em] text-slate-200">
                 Crafted Platforms
               </p>
-              <h2 className="text-3xl font-display">Split-screen architecture, serene storytelling.</h2>
+              <h2 className="text-3xl font-display">
+                Split-screen architecture, serene storytelling.
+              </h2>
               <div className="space-y-2 text-sm">
-                <p className="text-slate-200">Signature materials, tactile palettes, and curated art direction.</p>
+                <p className="text-slate-200">
+                  Signature materials, tactile palettes, and curated art
+                  direction.
+                </p>
                 <p className="text-sm uppercase tracking-[0.4em] text-slate-200">
                   Lagos · Victoria Island · Lekki · Abuja
                 </p>
@@ -140,8 +147,12 @@ export default function Home() {
         className="space-y-8"
       >
         <div className="flex items-center justify-between">
-          <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Neighborhood Spotlight</p>
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Immersive locational insight</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
+            Neighborhood Spotlight
+          </p>
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+            Immersive locational insight
+          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {neighborhoodSpotlight.map((hood) => (
@@ -155,8 +166,12 @@ export default function Home() {
                 style={{ backgroundImage: `url(${hood.image})` }}
               />
               <div className="space-y-1 px-6 py-6">
-                <p className="text-xs uppercase tracking-[0.4em] text-slate-400">{hood.name}</p>
-                <h3 className="text-2xl font-display text-deepSlate">{hood.vibe}</h3>
+                <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
+                  {hood.name}
+                </p>
+                <h3 className="text-2xl font-display text-deepSlate">
+                  {hood.vibe}
+                </h3>
                 <p className="text-sm text-slate-500">{hood.price}</p>
               </div>
             </motion.article>
@@ -175,10 +190,14 @@ export default function Home() {
       >
         {stats.map((stat) => (
           <div key={stat.label} className="space-y-2">
-            <p className="text-xs uppercase tracking-[0.4em] text-slate-400">{stat.label}</p>
+            <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
+              {stat.label}
+            </p>
             <p className="text-3xl font-display text-deepSlate">{stat.value}</p>
             <div className="h-[1px] bg-black/10" />
-            <p className="text-sm text-slate-500">Curated clients, architecture-forward strategies.</p>
+            <p className="text-sm text-slate-500">
+              Curated clients, architecture-forward strategies.
+            </p>
           </div>
         ))}
       </motion.section>

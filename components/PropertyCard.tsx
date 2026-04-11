@@ -56,7 +56,7 @@ export default function PropertyCard({ property, compact }: PropertyCardProps) {
 
       <Link
         href={`/properties/${property.slug}`}
-        className="mt-4 inline-flex items-center justify-between rounded-full border border-black/5 bg-deepSlate/80 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.4em] text-stone transition hover:bg-deepSlate hover:text-white"
+        className="mt-4 inline-flex items-center justify-between rounded-full border border-black/5 bg-deepSlate/80 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.4em] text-stone transition hover:bg-deepSlate hover:translate-x-1"
       >
         View Details
         <span aria-hidden>→</span>
