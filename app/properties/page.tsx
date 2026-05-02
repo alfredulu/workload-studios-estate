@@ -19,7 +19,7 @@ export default function PropertiesPage() {
         <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Portfolio</p>
         <h1 className="text-4xl font-display text-deepSlate">Explore Properties</h1>
         <p className="max-w-2xl text-lg text-slate-600">
-          Filter through carefully vetted estates and workspaces. Each listing is ready to preview with dedicated support personnel.
+          Browse verified properties across Lagos, Abuja, and Port Harcourt. Filter by type, contact an agent, or schedule a viewing directly.
         </p>
         <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.4em]">
           <button

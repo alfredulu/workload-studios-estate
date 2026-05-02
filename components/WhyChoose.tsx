@@ -4,18 +4,18 @@ import { ShieldCheck, Sparkles, Users } from "lucide-react";
 
 const reasons = [
   {
-    title: "Concierge Service",
-    detail: "Dedicated advisors, inspection teams, and end-to-end closing support.",
+    title: "Full Support",
+    detail: "From property search to documentation, we handle everything. You have a dedicated agent from start to finish.",
     icon: Users,
   },
   {
-    title: "Curated Portfolio",
-    detail: "Only the most exclusive listings are presented after rigorous review.",
+    title: "Verified Listings",
+    detail: "We inspect every property before it goes live. No fake listings, no inflated prices.",
     icon: Sparkles,
   },
   {
-    title: "Premium Insights",
-    detail: "Market intelligence, legal partners, and strategic negotiation guidance.",
+    title: "Market Knowledge",
+    detail: "We know the Lagos, Abuja, and Port Harcourt markets well. We'll advise you on fair prices and help you negotiate.",
     icon: ShieldCheck,
   },
 ];

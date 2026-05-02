@@ -4,28 +4,27 @@ import { motion } from "framer-motion";
 
 const timeline = [
   {
-    title: "Masterplanning",
+    title: "Planning",
     date: "Q2 2026",
     detail:
-      "Site intelligence, art direction, and sustainability brief for the lakefront parcel.",
+      "Site assessment, architectural planning, and structural survey completed. Lakefront parcel confirmed.",
   },
   {
-    title: "Construction Phase",
+    title: "Construction",
     date: "Q3 2026",
-    detail:
-      "Architectural concrete ribs, artisan stonework, and lighting orchestration at scale.",
+    detail: "Foundation, structure, and facade work underway. On schedule.",
   },
   {
     title: "Finishing",
     date: "Q1 2027",
     detail:
-      "Bespoke interiors, concierge lobbies, and private amenity programming.",
+      "Interior finishing, lobby fit-out, and amenity installation in progress.",
   },
   {
-    title: "Launch",
+    title: "Handover",
     date: "Q2 2027",
     detail:
-      "Select buyer previews, curated events, and launch of the private sales studio.",
+      "Property handover to buyers and opening of the sales office for walk-in viewings.",
   },
 ];
 
@@ -48,11 +47,12 @@ export default function DevelopmentsPage() {
           Developments
         </p>
         <h1 className="mt-2 text-4xl font-display text-deepSlate">
-          Upcoming architectural complexes with tactile craftsmanship.
+          New Developments in Lagos and Abuja. Off-Plan Units Available
         </h1>
         <p className="mt-4 text-lg text-slate-600">
-          From curated towers to sculptural landscapes, every development is
-          delivered with cinematic storytelling and high-touch launch programs.
+          We work directly with developers to list off-plan units before they
+          sell out. Register your interest early to get first access and
+          pre-launch pricing.
         </p>
       </motion.div>
 
@@ -113,7 +113,7 @@ export default function DevelopmentsPage() {
 
           <div className="rounded-2xl border border-black/5 bg-slate-100/70 p-6 text-sm text-slate-600">
             <p className="text-sm">
-              Join the preview list for Limited Edition launches:
+              Register your interest for off-plan units and pre-launch pricing:
             </p>
             <p className="mt-3 text-xs uppercase tracking-[0.4em] text-slate-400">
               Private hotline

@@ -5,24 +5,24 @@ import Link from "next/link";
 
 const journeySteps = [
   {
-    label: "Discovery",
+    label: "Valuation",
     detail:
-      "Curated site visit, valuation, and bespoke marketing brief within 48 hours.",
+      "We visit your property, assess its condition, and give you a realistic market valuation within 48 hours.",
   },
   {
-    label: "Storytelling",
+    label: "Marketing",
     detail:
-      "Cinematic staging, editorial content, and investor-ready dossiers.",
+      "We handle professional photography, write the listing, and share it with our verified buyer network.",
   },
   {
-    label: "Demand",
+    label: "Viewings",
     detail:
-      "Private showings, pre-qualified buyers, and quiet listings for discretion.",
+      "We schedule and manage all viewings with pre-qualified buyers. You don't need to be present.",
   },
   {
     label: "Closing",
     detail:
-      "Contract support, concierge closing, and bespoke handover rituals.",
+      "We coordinate with your lawyer, manage the paperwork, and confirm payment before you hand over keys.",
   },
 ];
 
@@ -39,18 +39,18 @@ export default function SellPage() {
           Sell With Us
         </p>
         <h1 className="mt-2 text-4xl font-display text-deepSlate">
-          Architectural marketing for elite sellers.
+          Sell Your Property Through Us
         </h1>
         <p className="mt-4 text-lg text-slate-600">
-          We engineer the seller’s journey with tactility, precision, and
-          premium audiences to achieve the fastest, most discreet closing.
+          We help property owners in Lagos, Abuja, and Port Harcourt sell faster
+          by connecting them directly with verified buyers. No stress, no delays.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.4em] text-slate-500">
           <div className="rounded-2xl border border-black/10 px-5 py-3">
-            Exclusive buyer network · Lagos, Abuja, London
+            Verified buyer network · Lagos, Abuja, Port Harcourt
           </div>
           <div className="rounded-2xl border border-black/10 px-5 py-3">
-            Staged viewings · Cinematic films · Legal concierge
+            Property photography · Viewings management · Legal support
           </div>
         </div>
       </motion.div>
@@ -85,10 +85,10 @@ export default function SellPage() {
               Available Units Counter
             </p>
             <p className="mt-2 text-3xl font-display text-deepSlate">
-              12 Signature Residences
+              12 Active Listings
             </p>
             <p className="text-sm">
-              Open for curated buyers with soft closing window in Q3.
+              Currently being shown to buyers. Contact us to list yours.
             </p>
           </div>
         </motion.div>
@@ -103,11 +103,10 @@ export default function SellPage() {
             Lead Form
           </p>
           <h2 className="mt-2 text-3xl font-display text-deepSlate">
-            Submit Your Asset
+            List Your Property
           </h2>
           <p className="text-sm text-slate-500">
-            One form unlocks valuation, marketing strategy, and direct
-            introductions to vetted buyers.
+            Fill in your details and we'll get back to you within 24 hours.
           </p>
           <div className="mt-6 space-y-4">
             <label className="text-[11px] uppercase tracking-[0.4em] text-slate-400">
@@ -145,7 +144,7 @@ export default function SellPage() {
             type="submit"
             className="mt-6 w-full rounded-2xl bg-terracotta px-5 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone transition hover:bg-black hover:text-white"
           >
-            Request Sales Strategy
+            Submit Listing Request
           </button>
           <p className="mt-4 text-xs uppercase tracking-[0.4em] text-slate-400">
             Already working with us?{" "}

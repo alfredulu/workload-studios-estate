@@ -22,7 +22,7 @@ const footerLinks = [
   {
     title: "Services",
     items: [
-      { label: "White-Glove Tours", href: "#" },
+      { label: "Schedule a Viewing", href: "#" },
       { label: "Investment Advisory", href: "#" },
       { label: "Portfolio Strategy", href: "#" },
     ],
@@ -45,7 +45,7 @@ export default function Footer() {
           <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Workload Studios</p>
           <p className="text-2xl font-display text-deepSlate">Estate</p>
           <p className="text-sm text-slate-500">
-            Architectural real estate services for discerning clients across Nigeria.
+            Helping buyers, sellers, and investors across Lagos, Abuja, and Port Harcourt.
           </p>
         </div>
         {footerLinks.map((column) => (

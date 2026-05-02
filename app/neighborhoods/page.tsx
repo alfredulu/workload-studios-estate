@@ -4,39 +4,39 @@ import { motion } from "framer-motion";
 
 const neighborhoods = [
   {
-    name: "The Marina",
+    name: "The Marina, Lagos",
     price: "Avg ₦850M",
-    vibe: "Executive, waterfront",
+    vibe: "Waterfront, close to Eko Atlantic",
     image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    name: "Highlands",
+    name: "Highlands, Lagos",
     price: "Avg ₦620M",
-    vibe: "Minimalist, hillside",
+    vibe: "Quiet residential, gated streets",
     image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    name: "Ikoyi Classic",
+    name: "Ikoyi, Lagos",
     price: "Avg ₦970M",
-    vibe: "Modern, gated",
+    vibe: "Fully detached homes, established neighborhood",
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    name: "Lekki Marina",
+    name: "Lekki Phase 1, Lagos",
     price: "Avg ₦680M",
-    vibe: "Resort, lagoon",
+    vibe: "Lagoon-view apartments and duplexes",
     image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
   },
   {
-    name: "Victoria Island",
+    name: "Victoria Island, Lagos",
     price: "Avg ₦790M",
-    vibe: "Corporate, cosmopolitan",
+    vibe: "Business district, offices and high-rise apartments",
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
   },
   {
-    name: "Maitama Gardens",
+    name: "Maitama, Abuja",
     price: "Avg ₦540M",
-    vibe: "Diplomatic, verdant",
+    vibe: "Diplomatic zone, spacious detached homes",
     image: "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80",
   },
 ];
@@ -52,10 +52,10 @@ export default function NeighborhoodsPage() {
       >
         <p className="text-xs uppercase tracking-[0.4em] text-slate-400">Neighborhoods</p>
         <h1 className="mt-2 text-4xl font-display text-deepSlate">
-          Architectural contexts, curated for the luxury traveler and collector.
+          Key Neighborhoods Across Lagos and Abuja
         </h1>
         <p className="mt-4 text-lg text-slate-600">
-          Each card highlights the ambience, price point, and lifestyle aura for our most beloved zones.
+          Find out average property prices, what each area is known for, and what types of properties are available.
         </p>
       </motion.div>
 
@@ -81,7 +81,7 @@ export default function NeighborhoodsPage() {
               <p className="text-sm text-slate-500">{hood.price}</p>
               <div className="flex flex-wrap gap-2">
                 <span className="rounded-full border border-black/5 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-slate-500">
-                  <span>Vibe</span>
+                  <span>Area Type</span>
                 </span>
                 <span className="rounded-full border border-black/5 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-slate-500">
                   <span>Average Price</span>

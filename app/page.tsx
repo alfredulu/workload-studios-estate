@@ -16,21 +16,21 @@ const stats = [
 const neighborhoodSpotlight = [
   {
     name: "The Marina",
-    vibe: "Executive, riverside",
+    vibe: "Waterfront, close to Eko Atlantic",
     price: "Avg ₦820M",
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
   },
   {
     name: "Highlands",
-    vibe: "Minimalist, hillside",
+    vibe: "Quiet residential, gated streets",
     price: "Avg ₦620M",
     image:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    name: "Ikoyi Classic",
-    vibe: "Modern, gated",
+    name: "Ikoyi",
+    vibe: "Fully detached homes, established neighborhood",
     price: "Avg ₦970M",
     image:
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
@@ -62,13 +62,13 @@ export default function Home() {
               Workload Studios Estate
             </p>
             <h1 className="text-4xl font-display text-deepSlate leading-tight md:text-5xl">
-              Architectural residences and visionary masterplans sculpted for
-              Nigeria&rsquo;s luxury elite.
+              Find luxury and residential properties in Lagos, Abuja, and Port
+              Harcourt.
             </h1>
             <p className="text-lg text-slate-600">
-              From bespoke penthouses to landmark developments, we orchestrate
-              elevated property journeys, blending tactile materials, cultural
-              nuance, and white-glove concierge service.
+              Browse verified listings across Lekki, Victoria Island, Ikoyi,
+              Banana Island, Maitama, and more. From 3-bedroom apartments to
+              full commercial developments.
             </p>
 
             <form className="grid gap-4 md:grid-cols-3">
@@ -104,7 +104,7 @@ export default function Home() {
                 href="/properties"
                 className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500 underline-offset-2 transition hover:text-deepSlate"
               >
-                Preview Portfolio
+                View All Listings
               </Link>
             </div>
           </div>
@@ -119,15 +119,15 @@ export default function Home() {
             />
             <div className="relative z-10 flex h-full flex-col justify-between gap-6 text-white">
               <p className="text-xs uppercase tracking-[0.4em] text-slate-200">
-                Crafted Platforms
+                How It Works
               </p>
               <h2 className="text-3xl font-display">
-                Split-screen architecture, serene storytelling.
+                Browse listings, schedule viewings, and connect directly with agents.
               </h2>
               <div className="space-y-2 text-sm">
                 <p className="text-slate-200">
-                  Signature materials, tactile palettes, and curated art
-                  direction.
+                  Every property is inspected before listing. No fake listings,
+                  no inflated prices.
                 </p>
                 <p className="text-sm uppercase tracking-[0.4em] text-slate-200">
                   Lagos · Victoria Island · Lekki · Abuja
@@ -151,7 +151,7 @@ export default function Home() {
             Neighborhood Spotlight
           </p>
           <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
-            Immersive locational insight
+            Key areas across Lagos and Abuja
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
@@ -196,7 +196,7 @@ export default function Home() {
             <p className="text-3xl font-display text-deepSlate">{stat.value}</p>
             <div className="h-[1px] bg-black/10" />
             <p className="text-sm text-slate-500">
-              Curated clients, architecture-forward strategies.
+              Verified buyers and sellers across Nigeria.
             </p>
           </div>
         ))}

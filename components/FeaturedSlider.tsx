@@ -10,7 +10,7 @@ export default function FeaturedSlider() {
       <div className="flex items-end justify-between">
         <div>
           <p className="text-xs uppercase tracking-[0.4em] text-slate-400">
-            Signature Collection
+            Featured Listings
           </p>
           <h2 className="text-3xl font-display text-midnight">Featured Listings</h2>
         </div>

@@ -7,7 +7,7 @@ const categories = [
   {
     title: "Luxury Residences",
     subtitle: "Banana Island, Ikoyi, VI",
-    body: "Curated mansions, flagship penthouses, and sky villas with concierge-level service.",
+    body: "Mansions, penthouses, and large detached homes in Banana Island, Ikoyi, and Victoria Island.",
     icon: Home,
     span: "md:col-span-2 md:row-span-2",
     image:
@@ -16,16 +16,16 @@ const categories = [
   {
     title: "Commercial Hubs",
     subtitle: "Victoria Island & Lekki",
-    body: "Signature office towers, creative campuses, and hospitality-ready buildings.",
+    body: "Grade-A office floors, commercial compounds, and retail spaces in Victoria Island and Lekki.",
     icon: Building,
     span: "",
     image:
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1500&q=80",
   },
   {
-    title: "Residential Collections",
+    title: "Residential Properties",
     subtitle: "Lekki, Abuja, Port Harcourt",
-    body: "Townhomes, terraces, and apartment suites shaped for modern Nigerian households.",
+    body: "Townhouses, terraces, and apartments for families and professionals across Nigeria.",
     icon: Layers,
     span: "",
     image:
@@ -37,9 +37,9 @@ export default function BentoGrid() {
   return (
     <section className="mt-16">
       <div className="flex items-center justify-between text-sm uppercase tracking-[0.3em] text-slate-400">
-        <p>Bento Grid</p>
+        <p>Property Categories</p>
         <p className="text-xs tracking-[0.4em] text-slate-500">
-          Explore curated territories
+          Browse by category
         </p>
       </div>
 

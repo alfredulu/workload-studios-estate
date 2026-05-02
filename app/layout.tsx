@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Workload Studios Estate | Luxury Nigerian Real Estate",
+  title: "Workload Studios Estate | Nigerian Real Estate",
   description:
-    "Workload Studios Estate curates premium Nigerian properties with concierge service and sophisticated design.",
+    "Find verified properties in Lagos, Abuja, and Port Harcourt. Browse listings across Lekki, Victoria Island, Ikoyi, Banana Island, Maitama, and more.",
 };
 
 export default function RootLayout({

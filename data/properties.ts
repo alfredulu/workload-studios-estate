@@ -28,12 +28,12 @@ export const properties: Property[] = [
     bathrooms: 7,
     type: "Luxury",
     description:
-      "Monolithic galleries, engineered glass, and sculptural landscaping define this waterfront estate with a private dock.",
+      "6-bedroom waterfront mansion on Banana Island with a private dock, helipad deck, and full staff quarters. 8,400 sq ft on a landscaped compound. Ready to move in.",
     features: [
-      "Panoramic helipad view deck",
-      "Glass-floored show lounge",
-      "Infinity-edge pool",
-      "Automated climate façade",
+      "Helipad view deck",
+      "Glass-floored living room",
+      "Infinity pool",
+      "Full smart home system",
     ],
     images: [
       "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
@@ -53,11 +53,11 @@ export const properties: Property[] = [
     bathrooms: 3,
     type: "Residential",
     description:
-      "A light-filled loft with sculpted concrete walls, custom millwork, and curated art niches overlooking the lagoon.",
+      "3-bedroom loft apartment on Victoria Island with direct lagoon views, open-plan layout, and fully fitted kitchen. High-floor unit with 3,300 sq ft of living space.",
     features: [
-      "Double-height gallery",
-      "Automated privacy glazing",
-      "Chef's atelier kitchen",
+      "Double-height living room",
+      "Automated smart glass windows",
+      "Fully fitted kitchen with island",
       "Smart home automation",
     ],
     images: [
@@ -77,10 +77,10 @@ export const properties: Property[] = [
     bathrooms: 6,
     type: "Luxury",
     description:
-      "Layered concrete planes, natural stone, and recessed lighting embrace a sculptural courtyard and rooftop deck.",
+      "5-bedroom detached villa in Ikoyi with rooftop deck, private courtyard, and internal elevator. Natural stone finishes throughout. Ideal for families who want space and security.",
     features: [
-      "Corten steel gallery",
-      "Cinema-grade screening room",
+      "Private gallery space",
+      "Home cinema room",
       "Private elevator",
       "Staff quarters",
     ],
@@ -102,12 +102,12 @@ export const properties: Property[] = [
     bathrooms: 3,
     type: "Residential",
     description:
-      "Curated high-rise residence with wraparound balconies, concierge parking, and sweeping Lekki Lagoon views.",
+      "2-bedroom high-rise condo in Lekki Phase 1 with direct lagoon views, wraparound balcony, and 24/7 estate security. Well-managed building with facilities.",
     features: [
-      "Private concierge lobby",
-      "Infinity pool terrace",
+      "24/7 concierge lobby",
+      "Rooftop pool terrace",
       "Smart lighting & sound",
-      "Fitness studio",
+      "On-site gym",
     ],
     images: [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80",
@@ -126,12 +126,12 @@ export const properties: Property[] = [
     bathrooms: 12,
     type: "Commercial",
     description:
-      "Signature Grade-A tower with atrium lounges, private terraces, and hospitality-driven services for creative houses.",
+      "Grade-A commercial floor space on Victoria Island. 13,800 sq ft across multiple units. Suitable for corporate offices, creative agencies, and hospitality businesses. Ready for fit-out.",
     features: [
-      "Concierge café",
+      "On-site café",
       "Dedicated boardroom suites",
       "EV charging bays",
-      "Secure art-worthy storage",
+      "Secure storage rooms",
     ],
     images: [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
@@ -151,12 +151,12 @@ export const properties: Property[] = [
     bathrooms: 5,
     type: "Luxury",
     description:
-      "Serene villa anchored by a sculptural staircase, floating terraces, and a private lap pool framed by palms.",
+      "4-bedroom detached villa in Maitama, Abuja with private lap pool, covered terraces, and a well-landscaped compound. Quiet street, close to the diplomatic zone. Move-in ready.",
     features: [
-      "Sustainable green roof",
-      "Library & study",
-      "Smart shading",
-      "Private spa suite",
+      "Solar panels and green roof",
+      "Library and home office",
+      "Smart window shading",
+      "Private spa bathroom",
     ],
     images: [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80",
@@ -175,12 +175,12 @@ export const properties: Property[] = [
     bathrooms: 10,
     type: "Commercial",
     description:
-      "Flexible compound for luxury showrooms, design ateliers, and boutique hospitality with lush atriums.",
+      "Commercial compound in Lekki suited for showrooms, offices, and retail. Open atrium layout with rooftop bar and on-site parking. Good for creative businesses and hospitality operators.",
     features: [
-      "Atrium courtyard",
-      "Rooftop bar",
-      "Gallery lighting",
-      "On-site concierge",
+      "Open atrium courtyard",
+      "Rooftop bar and lounge",
+      "Professional lighting throughout",
+      "On-site management team",
     ],
     images: [
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
@@ -199,12 +199,12 @@ export const properties: Property[] = [
     bathrooms: 4,
     type: "Residential",
     description:
-      "Elevated residence with layered balconies, timber louvers, and panoramic views of the Mississippi-style estuary.",
+      "3-bedroom riverfront apartment in Port Harcourt with balcony views over the Bonny River estuary, private boat berth, and outdoor terrace. Gated estate, 24/7 security.",
     features: [
-      "Private berth",
-      "Terrace cinema",
-      "Biophilic gardens",
-      "Floating dining pavilion",
+      "Private boat berth",
+      "Outdoor terrace with cinema screen",
+      "Landscaped gardens",
+      "Outdoor dining terrace",
     ],
     images: [
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
